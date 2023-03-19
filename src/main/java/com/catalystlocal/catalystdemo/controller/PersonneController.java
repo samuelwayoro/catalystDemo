@@ -24,8 +24,6 @@ public class PersonneController {
 	@Autowired
 	private PersonneService ps;
 	
-	@Autowired
-	private MapStructMapper mapStructMapper ;
 	
 
 	/**
@@ -34,7 +32,6 @@ public class PersonneController {
 	 */
 	@GetMapping("")
 	public List<Personne> allPersons(){
-		System.out.println(mapStructMapper.toString());
 		return ps.findAll();
 	}
 	
