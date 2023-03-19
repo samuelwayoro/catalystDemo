@@ -24,7 +24,7 @@ public class PersonneController {
 	@Autowired
 	private PersonneService ps;
 	
-	@Autowired(required=true)
+	@Autowired
 	private MapStructMapper mapStructMapper ;
 	
 
